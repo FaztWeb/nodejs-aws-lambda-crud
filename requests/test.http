@@ -1,0 +1,26 @@
+@api = https://c7nftp7820.execute-api.us-west-2.amazonaws.com
+
+GET {{api}}
+
+### create task
+POST {{api}}/tasks
+Content-Type: application/json
+
+{
+  "title": "my third task",
+  "description": "some third created"
+}
+
+### get tasks
+GET {{api}}/tasks
+
+### get single task
+GET {{api}}/tasks/0c3378f1-d857-4db4-a283-e1ca2074ab2d
+
+### update single task
+PUT {{api}}/tasks/0c3378f1-d857-4db4-a283-e1ca2074ab2d
+Content-Type: application/json
+
+{
+  "done": true
+}
