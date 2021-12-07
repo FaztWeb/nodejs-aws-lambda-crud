@@ -16,7 +16,6 @@ const getTask = async (event) => {
 
   return {
     status: 200,
-    // body: JSON.stringify(task),
     body: task,
   };
 };

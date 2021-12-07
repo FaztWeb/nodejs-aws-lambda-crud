@@ -7,8 +7,8 @@ POST {{api}}/tasks
 Content-Type: application/json
 
 {
-  "title": "my third task",
-  "description": "some third created"
+  "title": "my four task",
+  "description": "some four created"
 }
 
 ### get tasks
@@ -24,3 +24,6 @@ Content-Type: application/json
 {
   "done": true
 }
+
+### delete single task
+DELETE {{api}}/tasks/5a2aefd9-7d78-4bbb-a02b-78505679db91

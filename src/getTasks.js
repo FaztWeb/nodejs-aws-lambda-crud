@@ -9,7 +9,9 @@ const getTasks = async (event) => {
 
   return {
     status: 200,
-    body: JSON.stringify(tasks)
+    body: {
+      tasks,
+    },
   };
 };
 
